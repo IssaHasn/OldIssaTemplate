@@ -1,0 +1,831 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color: rgb(11, 11, 18);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --pink: rgb(200, 23, 126);
+    --blue: rgb(23, 97, 200);
+    --light: white;
+    --dark: black;
+    --boxs: rgb(50, 44, 59);
+}
+/*anmations*/
+@keyframes position{
+    0%{
+        opacity: 0;
+        left: 5%;
+    }
+    50%{
+        opacity: 1;
+        left: 10%;
+    }
+    100%{
+        left: 35%;
+        opacity: 0;
+    }
+}
+/*------*/
+@media (min-width:1122px){
+    main{
+        background-image: url(imgs/background.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        box-shadow: 1px 1px 20px 20px var(--dark);
+    }
+    .contaner{
+        width: 92%;
+        margin-left: 4%;
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+    header .logo{
+        font-size: 28px;
+        color: var(--pink);
+        margin-top: 40px;
+    }
+    nav .links_list{
+        list-style: none;
+        margin-top: 40px;
+    }
+    nav .links_list .link{
+        display: inline-block;
+        margin-right: 45px;
+        font-size: 22px;
+    }
+    nav .links_list .link a{
+        text-decoration: none;
+        color: var(--dark);
+        transition: .3s;
+    }
+    nav .links_list .link a:hover{
+        color: var(--pink);
+    }
+    .poto{
+        position: relative;
+        top: 4rem;
+        left: 10%;
+        width: 50%;
+    }
+    .image{
+        display: inline-block;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px 5px var(--boxs);
+        background-image: url(imgs/issa.jpg);
+        background-size: cover;
+    }
+    .welcome{
+        position: relative;
+        left: 30px;
+        bottom: 40px;
+        font-size: 26px;
+        display: inline-block;
+        color: var(--dark);
+    }
+    .social_media{
+        max-width: 500px;
+        position: relative;
+        left: 55%;
+        bottom: 40px;
+    }
+    .social_media .title{
+        margin-left: 30%;
+        color: var(--pink);
+        font-size: 22px;
+    }
+    .social_media .gamil{
+        margin-left: 30%;
+        font-size: 20px;
+        color: var(--dark);
+    }
+    /*------*/
+    .about{
+        position: relative;
+        left: 23%;
+        bottom: 6rem;
+        transform: translate(-50% -50%);
+        width: 54%;
+        height: 500px;
+        background-color: var(--boxs);
+        box-shadow: 1px 1px 20px 2px var(--blue);
+        border-radius: 30px;
+    }
+    .lists{
+        position: relative;
+        top: 10px;
+        left: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+    .info_list1{
+        position: relative;
+        top: 20px;
+        left: 15px;
+        list-style: none;
+        width: 50%;
+    }
+    .info_list2{
+        right: 25px;
+        position: relative;
+        top: 20px;
+        list-style: none;
+        width: 50%;
+    }
+    .info{
+        margin-top: 5px;
+    }
+    .info .title{
+        color: var(--blue);
+        font-size: 22px;
+        display: inline-block;
+    }
+    .info .value{
+        display: inline-block;
+        color: var(--light);
+    }
+    .text_box{
+        position: relative;
+        width: 550px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .text_box .text{
+        color: var(--light);
+        font-size: 18px;
+    }
+    /*------*/
+    .title_sction2{
+        color: var(--pink);
+        position: absolute;
+        display: block;
+        width: 150px;
+        left: 32%;
+        transform: translate(-50%,-50%);
+        animation-name: position;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+    }
+    .skills{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: var(--boxs);
+        height: 200px;
+        width: 50%;
+        position: relative;
+        top: 150px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        box-shadow: 1px 1px 20px 2px var(--blue);
+        border-radius: 30px;
+        margin-bottom: 150px;
+    }
+    .skills .skills_list{
+        list-style: none;
+        margin-top: 20px;
+    }
+    .skills .skills_list2{
+        list-style: none;
+        margin-top: 20px;
+    }
+    .skills .skills_list .title{
+        color: var(--pink);
+    }
+    .skills .skills_list2 .title{
+        color: var(--pink);
+    }
+    .skills .skills_list .skill{
+        margin-top: 4px;
+    }
+    .skills .skills_list .skill_name{
+        color: var(--light);
+        font-size: 18px;
+    }.skills .skills_list2 .skill{
+        margin-top: 4px;
+    }
+    .skills .skills_list2 .skill_name{
+        color: var(--light);
+        font-size: 18px;
+    }
+    /*------*/
+    .my_work{
+        width: 100%;
+        height: 720px;
+        border-radius: 30px;
+        background-color:var(--boxs);
+        box-shadow: 1px 1px 20px 2px var(--pink);
+        margin-bottom: 150px;
+    }
+    .text_of_work{
+        color: var(--blue);
+        position: relative;
+        top: 5%;
+        left: 5%;
+        font-size: 26px;
+        font-weight: 700;
+        width: 50%;
+    }
+    .glimpse{
+        font-size: 24px;
+        position: relative;
+        top: 6%;
+        left: 5%;
+        width: 50%;
+        color: var(--light);
+    }
+    .my_work .list_works{
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: 15%;
+        
+    }
+    .my_work .list_works .work{
+        width: 30%;
+        height: 240px;
+        box-shadow: 1px 1px 20px 2px rgb(0, 0, 0);
+        border-radius: 10px;
+        margin-bottom: 25px;
+    }
+    /*------*/
+    .mine_footer{
+        width: 64%;
+        background-color: var(--boxs);
+        transform: translate(-50%,-50%);
+        position: relative;
+        left: 50%;
+        text-align: center;
+        border-radius: 30px;
+        box-shadow: 1px 1px 20px 2px var(--blue);
+        padding: 2% 0 3%;
+    }
+    .foter_text{
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--light);
+    }
+    .mine_footer .git{
+        color: var(--pink);
+        font-size: 22px;
+        left: 50%;
+        font-weight: 700;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        bottom: 1%;
+        transition: .5s;
+    }
+    .mine_footer .git:hover{
+        font-size: 24px;
+        color: var(--blue);
+    }
+}
+
+@media (min-width:481px) and (max-width:1121px) {
+    main{
+        background-image: url(imgs/background.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        box-shadow: 1px 1px 20px 20px var(--dark);
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    header .logo{
+        font-size: 2rem;
+        color: var(--pink);
+        margin-top: 40px;
+        width: 30%;
+    }
+    nav{
+        width:30%;
+    }
+    nav .links_list{
+        list-style: none;
+        margin-top: 40px;
+        width: 50%;
+    }
+    nav .links_list .link{
+        display: inline-block;
+        font-size: 2rem;
+    }
+    nav .links_list .link a{
+        text-decoration: none;
+        color: var(--dark);
+        transition: .3s;
+    }
+    nav .links_list .link a:hover{
+        color: var(--pink);
+    }
+    .poto{
+        transform: translate(-50%,-50%);
+        position: relative;
+        top: 200px;
+        left: 50%;
+        text-align: center;
+    }
+    .image{
+        display: inline-block;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px 5px var(--boxs);
+        background-image: url(imgs/issa.jpg);
+        background-size: cover;
+    }
+    .welcome{
+        position: relative;
+        bottom: 40px;
+        font-size: 28px;
+        display: inline-block;
+        color: var(--blue);
+    }
+    .social_media{
+        transform: translate(-50%,-50%);
+        max-width: 500px;
+        position: relative;
+        top: 140px;
+        left: 50%;
+        text-align: center;
+    }
+    .social_media .title{
+        color: var(--pink);
+        font-size: 22px;
+    }
+    .social_media .gamil{
+        font-size: 22px;
+        color: var(--blue);
+    }
+    /*------*/
+    .about{
+        position: relative;
+        top: 120px;
+        bottom: 6rem;
+        transform: translate(-50% -50%);
+        width: 100%;
+        height: 500px;
+        background-color: var(--boxs);
+        box-shadow: 1px 1px 20px 2px var(--blue);
+        border-radius: 30px;
+    }
+    .lists{
+        position: relative;
+        top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .info_list1{
+        position: relative;
+        top: 10px;
+        list-style: none;
+        width: 30%;
+    }
+    .info_list2{
+        position: relative;
+        top: 10px;
+        list-style: none;
+        width: 30%;
+    }
+    .info{
+        margin-top: 5px;
+    }
+    .info .title{
+        color: var(--blue);
+        font-size: 14px;
+        display: inline-block;
+    }
+    .info .value{
+        font-size: 14px;
+        display: inline-block;
+        color: var(--light);
+    }
+    .text_box{
+        position: relative;
+        width: 98%;
+        top: 210px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .text_box .text{
+        color: var(--light);
+        font-size: 18px;
+    }
+    /*------*/
+    .title_sction2{
+        color: var(--pink);
+        position: relative;
+        display: block;
+        top: 200px;
+        width:111px;
+        animation-name: position;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+    }
+    .skills{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: var(--boxs);
+        height: 200px;
+        width: 90%;
+        position: relative;
+        top: 350px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        box-shadow: 1px 1px 20px 2px var(--blue);
+        border-radius: 30px;
+        margin-bottom: 150px;
+    }
+    .skills .skills_list{
+        list-style: none;
+        margin-top: 20px;
+        width: 46%;
+    }
+    .skills .skills_list2{
+        list-style: none;
+        width: 46%;
+        margin-top: 20px;
+    }
+    .skills .skills_list .title{
+        color: var(--pink);
+    }
+    .skills .skills_list2 .title{
+        color: var(--pink);
+    }
+    .skills .skills_list .skill{
+        margin-top: 4px;
+    }
+    .skills .skills_list .skill_name{
+        color: var(--light);
+        font-size: 18px;
+    }.skills .skills_list2 .skill{
+        margin-top: 4px;
+    }
+    .skills .skills_list2 .skill_name{
+        color: var(--light);
+        font-size: 18px;
+    }
+    /*------*/
+    .my_work{
+        width: 100%;
+        height: 1130px;
+        border-radius: 30px;
+        background-color:var(--boxs);
+        box-shadow: 1px 1px 20px 2px var(--pink);
+        margin-bottom: 150px;
+        position: relative;
+        top: 200px;
+    }
+    .text_of_work{
+        color: var(--blue);
+        position: relative;
+        top: 20px;
+        left: 5%;
+        font-size: 26px;
+        font-weight: 700;
+        width: 50%;
+    }
+    .glimpse{
+        font-size: 24px;
+        position: relative;
+        top: 40px;
+        left: 5%;
+        width: 50%;
+        color: var(--light);
+    }
+    .my_work .list_works{
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: 160px;
+        
+    }
+    .my_work .list_works .work{
+        width: 40%;
+        height: 240px;
+        box-shadow: 1px 1px 20px 2px rgb(0, 0, 0);
+        border-radius: 10px;
+        margin-bottom: 25px;
+    }
+    /*------*/
+    .mine_footer{
+        width: 84%;
+        height: 70px;
+        background-color: var(--boxs);
+        transform: translate(-50%,-50%);
+        position: relative;
+        left: 50%;
+        top: 200px;
+        text-align: center;
+        border-radius: 30px;
+        box-shadow: 1px 1px 20px 2px var(--blue);
+        padding: 2% 0 3%;
+    }
+    .foter_text{
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--light);
+    }
+    .mine_footer .git{
+        color: var(--pink);
+        font-size: 22px;
+        left: 50%;
+        font-weight: 700;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        bottom: 1%;
+        transition: .5s;
+    }
+    .mine_footer .git:hover{
+        font-size: 24px;
+        color: var(--blue);
+    }
+}
+
+@media (min-width:1px) and (max-width:480px) {
+    main{
+        background-image: url(imgs/background.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        box-shadow: 1px 1px 20px 20px var(--dark);
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    header .logo{
+        font-size: 1rem;
+        color: var(--pink);
+        margin-top: 40px;
+        width: 30%;
+    }
+    nav{
+        width:30%;
+    }
+    nav .links_list{
+        list-style: none;
+        margin-top: 40px;
+        width: 50%;
+    }
+    nav .links_list .link{
+        display: inline-block;
+        font-size: 1rem;
+    }
+    nav .links_list .link a{
+        text-decoration: none;
+        color: var(--dark);
+        transition: .3s;
+    }
+    nav .links_list .link a:hover{
+        color: var(--pink);
+    }
+    .poto{
+        transform: translate(-50%,-50%);
+        position: relative;
+        top: 200px;
+        left: 50%;
+        text-align: center;
+    }
+    .image{
+        display: inline-block;
+        width: 80%;
+        height: 80vw;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px 5px var(--boxs);
+        background-image: url(imgs/issa.jpg);
+        background-size: cover;
+    }
+    .welcome{
+        position: relative;
+        top:30px;
+        font-size: 18px;
+        display: inline-block;
+        color: var(--light);
+    }
+    .social_media{
+        max-width: 500px;
+        position: relative;
+        top: 140px;
+        text-align: center;
+    }
+    .social_media .title{
+        color: var(--pink);
+        font-size: 18px;
+    }
+    .social_media .gamil{
+        font-size: 18px;
+        color: var(--blue);
+    }
+    /*------*/
+    .about{
+        position: relative;
+        top: 120px;
+        bottom: 6rem;
+        transform: translate(-50% -50%);
+        width: 100%;
+        height: 700px;
+        background-color: var(--boxs);
+        box-shadow: 1px 1px 20px 2px var(--blue);
+        border-radius: 30px;
+    }
+    .lists{
+        position: relative;
+        top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .info_list1{
+        position: relative;
+        top: 10px;
+        list-style: none;
+        width: 46%;
+    }
+    .info_list2{
+        position: relative;
+        top: 10px;
+        list-style: none;
+        width: 46%;
+    }
+    .info{
+        margin-top: 5px;
+    }
+    .info .title{
+        color: var(--blue);
+        font-size: 14px;
+        display: inline-block;
+    }
+    .info .value{
+        font-size: 14px;
+        display: inline-block;
+        color: var(--light);
+    }
+    .text_box{
+        position: relative;
+        width: 98%;
+        top: 210px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .text_box .text{
+        color: var(--light);
+        font-size: 18px;
+    }
+    /*------*/
+    .title_sction2{
+        opacity: 0;
+        color: var(--pink);
+        position: relative;
+        display: block;
+        width: 111px;
+        top: 200px;
+        animation-name: position;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+    }
+    .skills{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: var(--boxs);
+        height: 200px;
+        width: 90%;
+        position: relative;
+        top: 350px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        box-shadow: 1px 1px 20px 2px var(--blue);
+        border-radius: 30px;
+        margin-bottom: 150px;
+    }
+    .skills .skills_list{
+        list-style: none;
+        margin-top: 20px;
+        width: 46%;
+    }
+    .skills .skills_list2{
+        list-style: none;
+        width: 46%;
+        margin-top: 20px;
+    }
+    .skills .skills_list .title{
+        color: var(--pink);
+    }
+    .skills .skills_list2 .title{
+        color: var(--pink);
+    }
+    .skills .skills_list .skill{
+        margin-top: 4px;
+    }
+    .skills .skills_list .skill_name{
+        color: var(--light);
+        font-size: 18px;
+    }.skills .skills_list2 .skill{
+        margin-top: 4px;
+    }
+    .skills .skills_list2 .skill_name{
+        color: var(--light);
+        font-size: 18px;
+    }
+    /*------*/
+    .my_work{
+        width: 100%;
+        height: 2020px;
+        border-radius: 30px;
+        background-color:var(--boxs);
+        box-shadow: 1px 1px 20px 2px var(--pink);
+        margin-bottom: 150px;
+        position: relative;
+        top: 200px;
+    }
+    .text_of_work{
+        color: var(--blue);
+        position: relative;
+        top: 5%;
+        left: 5%;
+        font-size: 26px;
+        font-weight: 700;
+        width: 50%;
+    }
+    .glimpse{
+        font-size: 24px;
+        position: relative;
+        top: 6%;
+        left: 5%;
+        width: 50%;
+        color: var(--light);
+    }
+    .my_work .list_works{
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: 160px;
+        
+    }
+    .my_work .list_works .work{
+        width: 90%;
+        height: 240px;
+        box-shadow: 1px 1px 20px 2px rgb(0, 0, 0);
+        border-radius: 10px;
+        margin-bottom: 25px;
+    }
+    /*------*/
+    .mine_footer{
+        width: 84%;
+        height: 120px;
+        background-color: var(--boxs);
+        transform: translate(-50%,-50%);
+        position: relative;
+        left: 50%;
+        top: 200px;
+        text-align: center;
+        border-radius: 30px;
+        box-shadow: 1px 1px 20px 2px var(--blue);
+        padding: 2% 0 3%;
+    }
+    .foter_text{
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--light);
+    }
+    .mine_footer .git{
+        color: var(--pink);
+        font-size: 22px;
+        left: 50%;
+        font-weight: 700;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        bottom: 1%;
+        transition: .5s;
+    }
+    .mine_footer .git:hover{
+        font-size: 24px;
+        color: var(--blue);
+    }
+}
